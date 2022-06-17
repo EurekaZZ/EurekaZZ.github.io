@@ -1,0 +1,101 @@
+.icon-nocode, .icon-yepcode{
+  transition: opacity .3s;
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  line-height: 40px;
+}
+.icon-nocode{
+  opacity: 0;
+}
+.viewCode .icon-nocode{
+  opacity: 1;
+}
+.viewCode .icon-yepcode{
+  opacity: 0;
+}
+.panel{
+  width: 90%;
+  position: relative;
+  max-width: 650px;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
+  background: #F5F5F5;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.actions{
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding: 1em;
+  border: none;
+  background: none;
+  transition: color .2s;
+  cursor: pointer;
+}
+
+pre{
+  display: block;
+}
+.striked{
+ text-decoration: line-through;
+}
+.mfb-component--tl{
+  animation: fromTop 1s 1;
+  -webkit-animation: fromTop 1s 1;
+}
+
+@keyframes fromBottom {
+  0% {
+    transform: translateY(250px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes fromTop {
+  0% {
+    transform: translateY(-250px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fromBottom {
+  0% {
+    transform: translateY(250px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fromTop {
+  0% {
+    transform: translateY(-250px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
