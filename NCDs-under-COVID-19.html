@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>“病”临城下：封控中慢性病患者的求医问药之路</title>
+	<link rel="icon" href="img/web-icon.ico">
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <script src="dist/lib/modernizr.touch.js"></script>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="dist/mfb.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/font-awesome.4.6.0.css">
+
+    <style></style>
+</head>
+<body>
+	<ul id="menu" class="mfb-component--tl mfb-zoomin" data-mfb-toggle="hover">
+    <li class="mfb-component__wrap">
+      <a class="mfb-component__button--main">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </a>
+      <ul class="mfb-component__list">
+        <li>
+          <a href="#opening" data-mfb-label="开篇" class="mfb-component__button--child">
+            <i class="fa fa-hospital-o" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#pt2" data-mfb-label="苦等一张床位" class="mfb-component__button--child">
+            <i class="fa fa-bed" aria-hidden="true"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="#pt3" data-mfb-label="急求一份救命药" class="mfb-component__button--child">
+            <i class="fa fa-medkit" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#title3" data-mfb-label="伸出几方援手" class="mfb-component__button--child">
+            <i class="fa fa-ambulance" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+<div id="opening" class="main-wrapper" style="margin-top: 0;margin-bottom: 0">
+  <div class="slide slide-one" data-background="#28334e" style="background-color: #28334e;margin-top: 0;margin-bottom: 0;">
+    <!--  <img src="C:\Users\Administrator\Desktop\84cb44574e34a00b62da54a18ca0d370.jpeg" width=100%></img>  -->
+    <div id="pt1">
+      <div style="width: 100%;margin-bottom: 0;position: relative;">
+        <img src="img/cover.png" style="width: 100%;">
+        <img src="img/open.png" class="openbutton" style="position:fixed;bottom:0;left:0;width:100%">
+        <button id="buttonopen" class="openbutton" onClick="imgaafunc()" style="position:fixed;bottom:0;left:auto;left: 0; right: 0; margin: auto;width: 300px;height: 190px;background-color:#ffffff00;border-color: #fefaed00;  cursor:pointer;"></button>
+      </div>
+    <script>
+    function imgaafunc(){
+        $('html').attr('style','overflow:visible;');
+        $('.openbutton').attr('style','display:none;');
+
+    }
+    </script>
+      <video id="bubble" width=100% controls onMouseOver="this.play()" autobuffer="true" style="margin-top:200px"><!--autoplay="autoplay" muted="muted"-->
+        <source src="video/bubble.mp4">     
+      </video>
+      <div class="main-body">
+        <p>“爱人你死的太冤了，可怜我心爱的人临死还在相信4月5日上海就解封了。”</p>
+        <p>网友“神奇的柒小7”登上将近10年未用的微博，在上海疫情的相关话题下不断发帖、评论，反复诉说自己失去爱人的痛苦。由于无法及时入院接受气管镜治疗，她的丈夫最终于4月21日与世长辞。</p>
+        <p style="margin-bottom:0">疫情影响到了医院的收治情况。4月19日是上海全城封闭管理的第23天，我们对上海56家三级医疗机构的收治情况进行了电话调查，获得了这些医院的官方电话接听、病人收治等情况的一手资料。调查数据显示，<span class="highlight">当时只有11家医疗机构明确表示可以收治病人</span>。</p>        
+      </div>
+      <div class="disease-type">
+        <div class="disease-type-imgs" id="disease-type-imgs">
+            <img src="img/hospital4191.png" class="img" id="hospital4191">
+            <img src="img/hospital4192.png" class="img" id="hospital4192">
+            <img src="img/empty.png" class="img" id="hospital4193">
+            <img src="img/hypertension1.png" class="img" id="disease-type1">
+            <img src="img/hypertension2.png" class="img" id="disease-type2">
+            <img src="img/cancer.png" class="img" id="disease-type3">
+            <img src="img/tangniao.png" class="img" id="disease-type4">
+            <img src="img/yiyuzheng.png" class="img" id="disease-type5">
+            <img src="img/xinzang.png" class="img" id="disease-type6">
+
+        </div>
+        <div class="disease-type-text" id="disease-type-text">
+            <div class="disease-type-p" id="hospital419-p1" style="background-color: #28334e00;"></div>
+            <div class="disease-type-p" id="hospital419-p2" style="text-align:center">
+				疫情之下，慢性病患者群体的生存，远比想象中的更为艰难。
+			</div>
+			<div class="disease-type-p" id="hospital419-p3" style="background-color: #28334e00;"></div>
+            <div class="disease-type-p" id="disease-type-p1">
+              <div class="quote">「我爸一直有高血压，必须要吃药，但这两天只吃一种药，因为疫情不能去买，他们也不知道怎么买，之前是要三四种药一起吃的，最近觉得头晕，胸口痛。」</div>
+              高血压患者是求助链接里<span class="highlight">占比最高</span>的慢性病患者群体，求助比高达<span class="highlight">13.8%</span>。<br>
+              在上海的成年常住居民中，有31.4%的人群患有高血压，人数达330万之多。<br>
+            </div>
+            <div class="disease-type-p" id="disease-type-p2">
+              <div class="quote"> 「我母亲来上海看病，3月16日检查宫颈癌复发，准备安排插植放疗，因为疫情原因，暂缓治疗......我和妈妈困在这几平米的出租屋里什么都做不了，看着妈妈的身体一天天虚弱真的很焦虑！！」</div>
+              求助链接中，<span class="highlight">肺癌和乳腺癌</span>是出现次数最多的癌症类型，病人们最大的需求是<span class="highlight">住院和化疗</span>。截至2021年4月15日，上海共有癌症病人49万人。<br>
+            </div>
+            <div class="disease-type-p" id="disease-type-p3">
+              <div class="quote">「我父亲是糖尿病患者，需要每天服用二甲双胍缓释片。因封禁超2个月，原先买的药目前只剩下5天的药量，急需救助！」</div>
+              糖尿病患者的求助比占到<span class="highlight">13.2%</span>；上海卫健委披露，2020年上海35岁及以上成人糖尿病患病率为21.6%，约七成的受治疗者血糖控制不达标，封锁期间，他们的病情控制效果更不理想。
+            </div>
+            <div class="disease-type-p" id="disease-type-p4">
+              <div class="quote">「附近有没有人有药，我复发了，断断续续哭了两小时，崩溃了三四次，熬不住了。」</div>
+              我国抑郁症患病率约2.1%，但在本次求助信息统计中，抑郁症患者<span class="highlight">占比高达12.8%</span>。
+            </div>
+            <div class="disease-type-p" id="disease-type-p5">
+              <div class="quote">「82岁外婆的心脏已安装3个支架，同时患有老烂腿，行动非常不便。心脏病药见底了，急需单硝酸异山梨酯缓释片，求大家帮忙。」</div>
+              心脑血管患者在求助链接中的<span class="highlight">占比为2.8%</span>。最新发布的《中国心血管健康与疾病报告2020》显示，国内心脑血管疾病患病率在持续上升，目前患病人数约3.3亿。
+            </div>
+            <div class="disease-type-p" id="disease-type-p6">
+              入院和求药，是求助信息反映的患者们最迫切的需求，他们寻找床位与药物的故事，是一场同病痛与时间的赛跑。当疫情防控成为人们关注的焦点，谁来倾听求医问药之路中慢性病患者无声的呐喊？
+            </div>            
+            <!--<div class="disease-type-p" id="disease-type-p6" style="background-color: #28334e00; "></div>-->
+        </div>
+      </div>
+    </div>
+    <div id="pt2" style="margin-bottom:60px">
+      <div class="main-body">
+        <div class="title" id="title1" >
+          <img src="img/title1.png" class="titleimg">
+        </div>
+        <p style="margin-top:100px">5月6日早晨，一辆汽车驶出瑞金医院的大门，张女士带着在医院留观了一夜的父亲驱车回家。这是他们尝试入院化疗的又一次失败。</p>
+        <p>张女士的父亲在2021年底被确诊为肺腺癌晚期，此后一直在上海交通大学医学院附属瑞金医院定期接受治疗。3月的疫情来得猝不及防，医院受此影响无法正常收治病人，张父本应在4月初就进行的化疗，一直拖到5月还没有实施。</p>
+        <p><span class="highlight">事实上，瑞金医院并非没有床位，只是需要等待。</span></p>
+        <p>封控期间，住院部从原先的一天收治10位病人变成三天收治1位。此外，病人入院后还要在院内隔离三天，才能开展后续治疗。</p>
+		<p>收治方式的改变意味着等待。从4月初开始，张女士就多次联系院方为父亲争取床位，并反复核实排队的进度，如果不出意外，父亲能够在5月中旬入院。然而当她再次联系医院时，院方竟让张女士重新登记信息，排队进程回到了原点。</p>
+		<p>床位还没有着落，更坏的情况又随之而来——父亲发觉肿瘤部位开始隐隐作痛。</p>
+		<p>是原有病情恶化了吗？还是肿瘤引起了新的并发症？没有人能给出确切答案。主治医生被封控在家，无法通过正常的接诊流程掌握到真实的病情，只能暂时建议病人服用止痛药来缓解病痛。</p>
+		<p>一粒，无济于事，虽然这已是医生建议用量的上限；两粒，效果短暂，待药效消退，等待父亲的依旧是无休止的疼痛和彻夜的失眠。</p>
+		<p><span class="highlight">只有及时化疗才能更有效地缓解父亲的痛苦。</span>整个4月，张女士都在积极与瑞金医院协商，但一直到5月初，父亲的床位都没能得到落实。与病情匹配的治疗方案不能随意变动，因此当时的张女士也没有考虑联系其他可以收治病人的医院。</p>
+        <p>无法及时收治病人的三级医疗机构不只瑞金医院一家。电话调查发现，4月19日，张父所在的浦东新区的14家三级综合医疗机构中，<span class="highlight">仅有2家可以收治患者，其中1家还需要等待</span>。</p>
+        <div class="pict"><img src="img/pudong.png" id="pudong" class="graph"></div>
+        <p>电视是父亲获得外界消息的主要途径。看到电视中上海病人得到了成功救治，而自己却深受病痛的折磨，父亲的心态被这巨大落差瞬间击垮。<span class="highlight">"他会在家里哭，会给你交代一些身后事，他自己也会觉得被耽误了，（病）看不好了。"</span></p>
+        <p>作为病人，父亲对自己的情况很敏感，每天都会仔细观察胸口的变化。4月底，他发现自己胸部靠近锁骨的部位凸起了一个肿块。起初，肿块并不明显，张女士还能自我安慰这是父亲因为过度担心而产生的心理作用；可是时间一天天过去，肿块凸起越来越严重，最后竟长到鸡蛋般大小，而从月初就开始的疼痛，更是日益加剧。</p>
+        <p><span class="highlight">化疗不能再拖下去了。</span>在家等待没有结果，张女士决定尝试线下就诊。5月5日，张女士申请出小区带父亲看急诊。但最终，一份足以证明病情严重的CT检查报告也无法让父亲立刻入院化疗。</p>
+        <p>“急诊的医生都判定我爸爸是极危重病人，为什么最后就只是留观？”张女士一次次问道。</p>
+        <p>4月25日，在上海封闭管理的第29天，我们进行了第二次电话调查。</p>
+        <p>当天，官方发布的市、区主要医疗机构暂停医疗服务情况显示，全市仅有12家三级医疗机构暂停服务。</p>
+        <div class="pict"><img src="img/425gov.png" id="gov425" class="graph"></div>
+        <p class="start">但实际上，在我们调查的57家三级医疗机构中，有20家明确表示不能收治病人，还有16家医院的官方电话无法接通。</p>
+        <div class="hospital425">
+          <div class="hospital425-imgs" id="hospital425-imgs">
+              <img src="img/hospital4251.jpg" class="img" id="hospital4251">
+              <img src="img/hospital4252.jpg" class="img" id="hospital4252">
+              <img src="img/hospital4253.jpg" class="img" id="hospital4253">
+              <img src="img/hospital4254.jpg" class="img" id="hospital4254">
+              <img src="img/hospital4255.jpg" class="img" id="hospital4255">
+              <img src="img/hospital4256.jpg" class="img" id="hospital4256">
+          </div>
+          <!--<div class="geoq"><iframe id="qq" width="700" height="400" frameborder="0" src="https://media.geoq.cn/media/share/pc.html?appid=037cad5c-5537-4ef5-950f-501725425d05"></iframe></div>-->
+          <div class="hospital425-text" id="hospital425-text">
+              <div class="hospital425-p" id="hospital425-p1" style="background-color: #28334e00;"></div>
+              <div class="hospital425-p" id="hospital425-p2">
+                4月25日，共<span class="highlight">71.9%</span>的三级医院能够<span class="highlight">接听电话</span>。
+              </div>
+              <div class="hospital425-p" id="hospital425-p3">
+                不过，接听电话不代表着病人能够入院得到治疗。在这些医院中，有<span class="highlight">15家</span>表示目前无法看诊。即使可以看诊，也有<span class="highlight">4家</span>医院因闭环管理等原因，不能正常进行化疗，<span class="highlight">无法收治病人</span>。
+              </div>
+              <div class="hospital425-p" id="hospital425-p4">
+                最终，有<span class="highlight">6家</span>医院明确表示<span class="highlight">收治需等待</span>，就像张女士父亲想去的瑞金医院一样，等待时间无法预估。
+              </div>
+              <div class="hospital425-p" id="hospital425-p5">
+                如果患者能够完成预约、是该医院老患者，且满足24小时内核酸阴性等一系列条件，有<span class="highlight">15家</span>医院表示<span class="highlight">能够立即收治</span>，仅占总数的<span class="highlight">26.3%</span>。若不符合任一条件，患者立即得到治疗的几率都会降低。
+              </div>
+          </div>
+        </div>
+        <p>多次请求入院失败后，张女士开始在社交平台上求助。求助信息发出后不久，浦东新区的东方医院主动联系了她，表示可以提供化疗服务。</p>
+        <p style="margin-bottom:180px">经过多方权衡，张父最终在5月7日前往东方医院接受治疗。此时，化疗已被耽误了一个多月。</p>
+          
+      </div>
+    </div>
+    <div id="pt3">
+      <div class="title" id="title2" >
+        <img src="img/title2.png" class="titleimg">
+      </div>
+      <div style="text-align:center;margin-top:100px">
+        <p>今天是2022年4月10日，你是一名抑郁症患者，目前急需富马酸喹硫平片。<br>
+          以下是你可以尝试的购药方案，可进行点击查看。</p>
+      </div>
+      <div id="container" style="height: 900px;width:900px;margin:0 auto;"></div>
+
+      <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/jquery"></script>
+      <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
+      <script type="text/javascript">
+        var dom = document.getElementById('container');
+        var myChart = echarts.init(dom, null, {
+          renderer: 'canvas',
+          useDirtyRect: false
+        });
+        var app = {};
+        var ROOT_PATH = 'https://fastly.jsdelivr.net/gh/apache/echarts-website@asf-site/examples';
+        var option;
+    
+        myChart.showLoading();
+    $.get(ROOT_PATH + '/data/asset/data/flare.json', function (data) {
+      myChart.hideLoading();
+      
+      myChart.setOption(
+        (option = {
+          tooltip: {
+            trigger: 'item',
+            triggerOn: 'mousemove',
+            enterable:true,
+        
+          },
+          backgroundColor:'#28334e',
+          title:{
+            text:"数据来源：记者团队整理\n注：线条颜色代表购买方式可行程度，\n橙色越深代表该方式可行度越高。",
+            left: "5%",
+            top:"3%",
+            textStyle: {
+              fontSize: 13,
+              color: "#808080",
+              fontWeight: "normal",
+              lineHeight: 18,
+        },
+            
+          },
+          series: [
+            {
+              type: 'tree',
+              orient: "TB",
+              lineStyle:{
+                width:1.5,
+              },
+              symbol:'https://ibb.co/K7x68zn',
+              
+              data: [
+                {
+                  name:"富马酸喹硫平片",
+                  symbol: "image://data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAAE5tJREFUeF7tnWtsHNd1gM+dmX3zsSRFURLFh0gximOkfshOndYOGsQN6rqOYdhBW7QFWrtVgyJp4DZu0Tb/2rSF46RF0gCuE+tHkaJBayOx4AYFnLhtnBRxZFl2glgiKYpcSpRESnyJ3OU+ZuYUd8m1KIbkzt6dO3vvzhnAsGXde+ac78zH3XlwLgPaiAAR2JEAIzZEgAjsTIAEoaODCOxCgAShw4MIkCB0DBABMQL0CSLGjWaFhAAJEpJGU5liBEgQMW40KyQESJCQNJrKFCNAgohxo1khIUCChKTRVKYYARJEjBvNCgkBEiQkjaYyxQiQIGLcaFZICJAgIWk0lSlGgAQR40azQkKABAlJo6lMMQIkiBg3mhUSAiRISBpNZYoRIEHEuNGskBAgQULSaCpTjAAJIsaNZoWEAAkSkkZTmWIESBAxbjQrJARIkJA0msoUI0CCiHGjWSEhQIKEpNFUphgBEkSMG80KCQESJCSNpjLFCJAgYtxoVkgIkCAhaTSVKUaABBHjRrNCQoAECUmjqUwxAiSIGDeaFRICJEhIGk1lihEgQcS40ayQECBBQtJoKlOMAAkixo1mhYQACRKSRlOZYgRIEDFuNCskBEiQkDSayhQjQIKIcaNZISFAgoSk0VSmGAESRIwbzQoJARIkJI2mMsUIkCBi3GhWSAiQICFpNJUpRoAEEeNGs0JCgAQJSaOpTDECJIgYN5oVEgIkSEgaTWWKESBBxLjRrJAQIEF2aDQWs0fBhKMAxiEASANiGoClETANjG38GdIb05eAsSVAXGLAlgBw/c8ASwDuJDhwikVTp0JyTDVVmSQIAFRkcNE4yhgeBeRiSNgYnEJkpwzmnlqX5nffAvgPR8KeKKRPBEIpCGL+MLjuA4jsAQB8wCeWNYWZn8/C/EIWSgXnlXgi8lJbIvZfPf09EzUFocHSCYRGECzl73fBvZ8ZcL+0TwiP7eJicEG2bpGIedJgxqvJFus7PT093/EYjoZJJND0gqCTPYbAjjVaikoPFxaycG0bObb2uKen7XS6PfYsM1PPSew/ha5CoGkFUU0M3gevcuzf1w6trbH11jE4xQCfI1Ea43LTCaKiGOty5ODa/GrVLt8kx+bRJEpVdjIGNI0giIWfA8f9PAJ+VAaoemLWLcemnTNg/wsm/DVjie/WkxPN9UagKQSx7dXfMcD4F28lBzvKTzk2Z44If29Gkn8RbDXh25v2grh27t8B4OMqtk6WHJtqPWlYyQ+oWHuz5KStIFhauxcZvqZqIxYWc3DtWh3nHDUUxky4h7Hk6zVMoaEeCWgpCGLuIDpwwWONgQ9bXMzB1YDkqBTHzEQXY2wh8GKbfIdaCuI6uQwg9KvYm0bIUebA4G3DTN6uIhOdc9JOENfOfhuAPyKi3tYwOTZQMMaeY2biD9Ujo29GWgmCTu5pRHhKRdyNlqPCBBH/1oyk/kpFRjrmpI0gWFq7Dxl+T0XIqsjx7vkIsg+xSELZCxgq9nCnnLQRxLVzLwDAo6rBXVzKwdWrwVytqqH2Fw0r+VgN42noDgS0EATt3KMIwAVRaltaWoO5qytVc9rx8ZGqM8UHMIDHmJV8UTwCzVy/9qHB5to5/tXqPpVSVVmODU6vGVbyQyox0zEX5QVBO/sQAjuhElwN5CjjYqbxMGNxpdip1EcvuSgviFPMPckM+KKXYoIYo4scnAWi++dmpOXpILg06z7UF8TOfoUB+yMVGqCTHGVBAI+bVuoJFdjpmoPygrh27r8B4JcaDVg3OTZ4/cCwkvc2mp3O+9dAkOwcAOtuJOSl5TWYm1PzatWuXBhcM8xkQ9k1sm9+7FsDQXLoR6GiMZaX12BWRzk2CjaspPI9Fu1NEPOUh+fajRNEdzn4AUSC1KeR8oIU86toWUZ9VQrMbgY5SBCBxm+Zorwgi/Pz2N6eqL/SGiI0ixwkSA1N32Go8oJcnL6MBw6011+pxwjLy3mYnbtedXQjHh+pmtQ2A+grlgi1G3OUFyQzOYP79rVBJGLWV6mH2c0mB32CeGh6lSHKCzI1OYOpZBS6ulL1V7tLhOvX83Bltnk+OSql0idIfYeN+oKcn0HbdqC/vxNknaw3qxz0CVKfHHy28oJMnr+IhYINXZ0pKZ8izSwHCRICQc5PXMRi0S5X6veJcbPLQYKEQJCJcxewVLqxxszgQCdEo1bdlWsuRw4QzwNjswCQY8CiiJgAwBQYbC8gxABYHID/v/LG11rIAYMsIE4gwKzBjEsA7KKDzrRpWucBoucYY8W6wTZZAOW/Yp0bv1A+B9m8jRzeC6yOzHWSAwEnDGAXwGAOOtgCDN4PAEkpxyFjqwzxVWDsJ4D4dsEuvhmPp0O9qE8dh5mUFv1M0HNj02g77k3/3zQMGBzsBNOs/Q779ZU8XLmi9tUqRBjLF0qLc7MrPYWiPSjr/MtTBxF/jADfMhC/yaItb3ma00SDlBdkfHQaHfdmQTj/WNSC/fvbIRr1fn9kZSUPlxWVA108n8sVM7lc6Y7F5VxlcdB3DzV+mZuL0uBtFhGeMYr4ryyVutzgXALZvfKCjJ3NoIvbP9DLbx5272mBlpaNxWZ2QaawHCdzuRLMXFq8e4cy361qT1cKOhsvSTkfBPiGYRrPMxZv6qXilBdk9EwGkbdjl63aV5CVlQJcvrJc9SeO31fJquzwfwDgNgDo4OO85qiSJBv1zbngPmVZLUouP1G16VUGKC/I2Xem5oFBZ7VCW1Ix6OhIQiIRuWmo1wMvMDkQfsQM1ouIvVtr8prrnq4W6OyUc55ejfNOf88YmwCEv2NW4nnRGCrOU16QsbOZ/3MRP+gVXro9URaFf/3yesAFIQdfGQoR9gDDW3erxWvOKkrC62LAvg+u86lmOaHXQJCp4y7C73kVhI/jV7f481v8ilW1LQg5AOCbAPBItVwqf6+7JLwOF/CYZaW+6rVmVccpL8j46PRfOq77ORkAg5CDAbyIAq9MbQZJGIN/ZGbySRm9Cyqm8oKcH898vGgjX2bN1y0AOfjdzW8DwEOiiXuWZE8LdHaodU5SqZnxT08z8euMsZIoh0bOU14QDmf0bOZ1RPRtLb5EPFI+mU8kohCPW0I3HHdvGi4BsHcA4Bfqba5XSfjlbn7upej2PWaWHmGsXbsVsLQQZGL8wm+VbOfrsppvmWZZmHjCgng8AvFYpJ5HWS4Ag3lA8G21pyaR5IfMLP4qY+lFWX2UEVcLQXjhY6OZl10XH5QBYbuYXBL++yf8hH/9H7bpv9f/zP+e3fxQ2BQgZoGxXa9UidTQFJIgvsGs5D2MsZsfrhMBEtAcbQSZGMvcX3LwlYC4CO2mPZ18s6e75U6hyR4mNYUkAC8YVlLJZbu3a4E2gvDkz41Pf9m23U96OJYCH2Kaxo+Gh/b4dp60UwHNIAky+LRpJr8UeJMEdqiVIOsn7FOvIsKHBWqVNqVQcMaHDnXuT6ViLdJ2simwZ0m6W6AjreKJO7vOzOIhHU7atRNk46rWDCIeCOJg9LKPRCLyg76DHb/oZaxfY7xKsre7FdLpYN8r5qVGxtjnmJn4rJexjRyjpSCTk5ODhTybbCS4yr4NxmBwsGvRsozyQ4dBbppLctWwknuD5CWyLy0F4YVOjGY+UnKx4Y9aW6Y5OjTUdUQEvh9zdJaEAT7CrNS3/OAgK4a2glSAjJ2dPuGiK3y3ul6wiUT0jb6D6bvqjVPPfF0lQYCvmFZSyYsulX5oL0j5nGQ0cwxd/Od6DjLRuV1dLRNdnclh0fl+zdNUktcNK3mPXwxkxGkKQcpfuSYu3eUUS19wAQNd2bX3QHo5lYoG9/LgXY4CDSW5ZlhqL/DTNIJUjpuJscynbReeQET+9g/p2/DQHgnPcomn7VmSva3Af3em0Zvqr0ZtOkGCFmWgvxNisfrf0+XngepVkp69rRD00hJb6yRB/Oy8QCzZnyj7etqgrS0ukJncKbpIQoLIPQ48R58Yu/ig4zofRYAP+/n1K51Owt7uQG6ge661MlB1SWzbhWi8RelvMUonV/MR4XHC2NjULQaYDzmu+yuIWNdjK/x3S/r6Ar9H6LFS729LacTXLb60dueeLqWPQaWT83wU1Dlw/MzFDxqm8wEbjaOA7u21fMLwO+mHD6u90rL3T5I2aG8P7uvixYtL0D94QOljUOnk6jzu65pekcZxYQiZ0cEQ08AwjQhphtiOwNoRsHx5t+9gx8+8bqiunUuYrJokxaIDs7PXYeBQr9LHoNLJSThOfA959swU8jc7HtivxK2QXevzKkkQFx7m57OQzRZhcIgE8f2gVCkgF4TnwwXx8grURueugiT85Hx6eqF8/+jQ8EGlf0grnVyjDyYv+68IovrJ+uZaGi0J//SYX8iW13kZIkG8HGb6jqkIwitQ9W2H29FtlCSb9xuNmDB0uE/pH9JKJ6eDNpsF4fk24nKpKKegJeFL6U1lbrz5J2KZMDxCgoj2T4t5WwXhSav4+MlOMIOShC/tMH5u7qY0LNOAw+/pV/qHtNLJ6WDIdoLwFbCGh/fokH45R8+S7GuDttba75M4jgtTUwuwdSEkzmnkCAmizYEikuh2gvA4/AV0/QrfYd9aq1dJ9u9rg9YaJOH3Oy5fXobCxkrFm/drGAzec2RA6R/SSicncsAGPWcnQSp59Pd1ll9vqsPmtySrqwW4em0VNq9SvJkDf+nekfeSIDocG8I5VhOkWa9uVXv5d+VS7m5g+U/nI7cMKv1DWunkhI/aACfutMjo1hSSiSjwhTi3roAVYKqed+X9k6QdWltvXh9yba0Ei4s5WM0Wqu6PzkGqItJ/wOTExflC0a66RFyl0va2BLSnExBX7JesxM9J1iXhX6O4GEvLa56bGotaC4eGD3Z5ntCAgfQJUif06amZU7m1Us3v49VBFK+fJPzKVjZXBH61qpYtkYi8OTDYe7SWOUGPJUHqJJ6ZuvTVtbXi74uGUV0Ur5KI1J9KRr/WN3DgD0TmBjWHBKmT9LnR6d+wXfff6gwD/ByFn58kk+v/VmmTJYllGL95+Ej/N1SqdWsuJIgP3Zk6P3MtXyj59l2aP4LBRUmlog19Qph/ZcrnbVhbKwI/+V7L+7eKWiwWWTg01OsbMx/auG0IEsQHsrOXrz69uJR9yodQ24bgi/nwN6fw+ymx8gpY/t9X4Y+C5AslyOdLkF/jUpTAduStc9ORTn2+Z3/3n8li5ldcEsQHkojYOTM9O7Way7f6EM5TiIo0fD14vtqVYRjA70xv/W8ejP/+heNg+ST6xj83/sz/nssR1NaSjK/09vcMMsaUX7OQBPHpqJidvfqniwvZZ3wK19RhujpTn+nu6f6CDkWSID52aTpz+aVcrvAxH0M2XahkMnaif2D/w7oURoL42ClENC/w+yJ5+zYfwzZNqGTcertvsPcoLeLZNC2tvRDEpY6zZ5a+yxjcUfvs5p2BLpx+7/vSH6FloJu3x54rGx8f715Zwf9MJqJ3e57UxANza8WTrcAeHLlz5KpuZdJXLEkde/zx51s/cezeF9vaY78saRdahL2+XHjl2ee+/+jx40+saJHwliRJEMlde/ON0a8lU7EnJO9GyfC51cLzd959RPgxHBWKIkEC6MKP3xp/MhqLfDGAXSmzi3yh9Ce33z7yD8okJJgICSIIrtZpb58avyeRin3JRbepz0sMZpxcyxb++LajIz+slZGK40mQgLtybvTCJ5nBPlOy7YGAdy11dxHLyqCLzxw+0vdPUncUcHASJGDgld399KeTn4hFrb+xbUf5B/Z2Q2RZJv+Fsc/eeuuhZxuEUupuSRCpeKsHP316/GHTMB+PRg2t7sAXi+4Jp+gcv+PukZeqV6nvCBJEkd69/PLJoeHhvb8djZifKpVsJV+qFYlY14ol58sT78x9/dcevfu8IuikpkGCSMUrFvzS9KW7HGSP2SXnY4WSfYtYFH9mxSLWGStinjAZvnCg/8Ab/kTVJwoJoniv8vml4aWF0s+XbPsOu+i+HxneVyzaSRlpR6NWjiF7zYoaP4lY1ul0Z+T1eDw9IWNfusQkQXTp1KY8ETE6Pj7zvlwuf8QyzAHThF5mGvsMwL2maQy4LiQRMcH/zacZBuQYY2v8347jZlxgc+i4VxwHZmzXySST8dGRkd53GGNFDXFITZkEkYqXgutOgATRvYOUv1QCJIhUvBRcdwIkiO4dpPylEiBBpOKl4LoTIEF07yDlL5UACSIVLwXXnQAJonsHKX+pBEgQqXgpuO4ESBDdO0j5SyVAgkjFS8F1J0CC6N5Byl8qARJEKl4KrjsBEkT3DlL+UgmQIFLxUnDdCZAguneQ8pdKgASRipeC606ABNG9g5S/VAIkiFS8FFx3AiSI7h2k/KUSIEGk4qXguhMgQXTvIOUvlQAJIhUvBdedAAmiewcpf6kESBCpeCm47gRIEN07SPlLJUCCSMVLwXUnQILo3kHKXyoBEkQqXgquOwESRPcOUv5SCZAgUvFScN0JkCC6d5Dyl0qABJGKl4LrToAE0b2DlL9UAiSIVLwUXHcCJIjuHaT8pRIgQaTipeC6EyBBdO8g5S+VAAkiFS8F150ACaJ7Byl/qQRIEKl4KbjuBEgQ3TtI+UslQIJIxUvBdSdAgujeQcpfKgESRCpeCq47ARJE9w5S/lIJkCBS8VJw3QmQILp3kPKXSoAEkYqXgutOgATRvYOUv1QC/w8ii3Mj8+L4JwAAAABJRU5ErkJggg==",
+                  symbolSize:'100',
+                   label:{
+                     fontSize:'20',
+                     textBorderColor:'#28334e',
+                     textBorderWidth: '5',
+                     fontWeight: "bold",
+                     position:"bottom",
+                     offset:[-30, -15],
+                   },
+                  children:[{
+                    name:"线上购买",
+                    label:{
+                     fontSize:'18',
+                     fontWeight: "bold",
+                     
+                     offset: [-10, 5],
+                   },
+                    symbol: "image://data:image/png;base64,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",
+                    symbolSize: '30',
+                    itemStyle:{"color":"blue"},
+                    children:[{
+                      name:"互联网医院",
+                      children:[{
+                        name:"集成平台",
+                        itemStyle:{"color":"#FEDF50"},
+                        lineStyle:{"color":"#FEDF50"},
+                        children:[{
+                          name:"“京东互联网医院”\n小程序",
+                          itemStyle:{"color":"#FEDF50"},
+                          lineStyle:{"color":"#FEDF50"},
+                            label:{
+                              fontSize:'10',
+                              color:'#D3D1CD',
+                              
+                            },
+                          children:[{
+                          name:"1. 精神类处方药物大规模缺药\n\n2. 无法开具在线处方，\n需要提供医院处方\n\n3. 药房大规模停业\n\n4. 运力不足\n\n5. 闪送/跑腿费用过高\n\n6. 道路封锁",
+                          symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                          lineStyle:{"color":"#961E23"},
+                        }]
+                        },{
+                          name:"“好大夫在线”\n小程序",
+                          itemStyle:{"color":"#FEDF50"},
+                          lineStyle:{"color":"#FEDF50"},
+                          label:{
+                              fontSize:'10',
+                              color:'#D3D1CD',
+                              
+                            },
+                          children:[{
+                          name:"1. 精神类处方药物大规模缺药\n\n2. 无法开具在线处方，\n需要提供医院处方\n\n3. 药房大规模停业\n\n4. 运力不足\n\n5. 闪送/跑腿费用过高\n\n6. 道路封锁",
+                          symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                          lineStyle:{"color":"#961E23"},
+                        }]
+                        },{
+                          name:"好心情app",
+                          itemStyle:{"color":"#FEDF50"},
+                          lineStyle:{"color":"#FEDF50"},
+                          label:{
+                              fontSize:'10',
+                              color:'#D3D1CD',
+                            },
+                          children:[{
+                          name:"1. 精神类处方药物大规模缺药\n\n2. 无法开具在线处方，\n需要提供医院处方\n\n3. 药房大规模停业\n\n4. 运力不足\n\n5. 闪送/跑腿费用过高\n\n6. 道路封锁",
+                          symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                          lineStyle:{"color":"#961E23"},
+                        }]
+                        },{
+                          name:"健康云app",
+                          itemStyle:{"color":"#FEDF50"},
+                          lineStyle:{"color":"#FEDF50"},
+                          label:{
+                              fontSize:'10',
+                              color:'D3D1CD',
+                            },
+                          children:[{
+                          name:"1. 精神类处方药物大规模缺药\n\n2. 无法开具在线处方，\n需要提供医院处方\n\n3. 药房大规模停业\n\n4. 运力不足\n\n5. 闪送/跑腿费用过高\n\n6. 道路封锁",
+                          symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                          lineStyle:{"color":"#961E23"},
+                        }]
+                        },{
+                          name:"......"
+                        }]
+                      },{
+                        name:"各医院\n公众号",
+                        itemStyle:{"color":"#FCF7B9"},
+                        lineStyle:{"color":"#FCF7B9"},
+                        children:[{
+                          name:"1. 精神类处方药物大规模缺药\n\n2. 无法开具在线处方，\n需要提供医院处方\n\n3. 运力不足\n\n4. 闪送/跑腿费用过高\n\n5. 道路封锁",
+                          symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                          lineStyle:{"color":"#961E23"},
+                        }]
+                      },{
+                        name:"支付宝\n生活号",
+                        itemStyle:{"color":"#FCF7B9"},
+                        lineStyle:{"color":"#FCF7B9"},
+                        children:[{
+                          name:"1. 精神类处方药物大规模缺药\n\n2. 无法开具在线处方，\n需要提供医院处方\n\n3. 药房大规模停业\n\n4. 运力不足\n\n5. 闪送/跑腿费用过高\n\n6. 道路封锁",
+                          symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                          lineStyle:{"color":"#961E23"},
+                        }]
+                      },{
+                        name:"......"
+                      }]
+                    },{
+                      name:"代理平台",
+                      children:[{
+                        name:"饿了么",
+                        itemStyle:{"color":"#FCF7B9"},
+                        lineStyle:{"color":"#FCF7B9"},
+                        children:[{
+                          name:"1. 精神类处方药物大规模缺药\n\n2. 无法开具在线处方，\n需要提供医院处方\n\n3. 药房大规模停业\n\n4. 运力不足\n\n5. 闪送/跑腿费用过高\n\n6. 道路封锁",
+                          symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                          lineStyle:{"color":"#961E23"},
+                        }]
+                      },{
+                        name:"美团",
+                        itemStyle:{"color":"#FCF7B9"},
+                        lineStyle:{"color":"#FCF7B9"},
+                        children:[{
+                          name:"1. 精神类处方药物大规模缺药\n\n2. 无法开具在线处方，\n需要提供医院处方\n\n3. 药房大规模停业\n\n4. 运力不足\n\n5. 闪送/跑腿费用过高\n\n6. 道路封锁",
+                          symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                          lineStyle:{"color":"#961E23"},
+                        }]
+                      },{
+                        name:"叮咚快药",
+                        itemStyle:{"color":"#FCF7B9"},
+                        lineStyle:{"color":"#FCF7B9"},
+                        children:[{
+                          name:"1. 精神类处方药物大规模缺药\n\n2. 无法开具在线处方，\n需要提供医院处方\n\n3. 药房大规模停业\n\n4. 运力不足\n\n5. 闪送/跑腿费用过高\n\n6. 道路封锁",
+                          symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                          lineStyle:{"color":"#961E23"},
+                        }]
+                      },{
+                        name:"......"
+                      }]
+                    },{
+                      name:"求助链接",
+                      children:[{
+                        name:"微博抗疫\n求助超话",
+                        itemStyle:{"color":"orange"},
+                        lineStyle:{"color":"orange"},
+                        children:[{
+                          name:"1. 时效无法保证\n\n2. 运力不足\n\n3. 闪送/跑腿费用过高\n\n4. 道路封锁",
+                          symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                          lineStyle:{"color":"#961E23"},
+                        }]
+                      },{
+                        name:"上海医疗紧急\n求助文档",
+                        itemStyle:{"color":"#FEDF50"},
+                        lineStyle:{"color":"#FEDF50"},
+                        children:[{
+                          name:"1. 时效无法保证\n\n2. 运力不足\n\n3. 闪送/跑腿费用过高\n\n4. 道路封锁",
+                          symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                          lineStyle:{"color":"#961E23"},
+                        }]
+                      },{
+                        name:"京东药品求助\n登记平台",
+                        itemStyle:{"color":"#FCF7B9"},
+                        lineStyle:{"color":"#FCF7B9"},
+                        children:[{
+                          name:"1. 时效无法保证\n\n2. 运力不足\n\n3. 闪送/跑腿费用过高\n\n4. 道路封锁",
+                          symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                          lineStyle:{"color":"#961E23"},
+                        }]
+                      },{
+                        name:"......"
+                      }]
+                    },{
+                      name:"社群求助",
+                      children:[{
+                        name:"病友提供多余药品",
+                        lineStyle:{"color":"orange"},
+                        itemStyle:{"color":"orange"},
+                        children:[{
+                          name:"1. 时效无法保证\n\n2. 运力不足\n\n3. 闪送/跑腿费用过高\n\n4. 道路封锁",
+                          symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                          lineStyle:{"color":"#961E23"},
+                        }]
+                      }]
+                    },{
+                      name:"上海精神卫生中心",
+                       children:[{
+                          name:"1. 电话无人接听\n\n2. 无法进行跨区服务\n\n3. 运力不足\n\n4. 闪送/跑腿费用过高\n\n5. 道路封锁",
+                          symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                          lineStyle:{"color":"#961E23"},
+                        }]
+                    }],
+                  },{
+                    name:"线下购买",
+                    label:{
+                     fontSize:'18',
+                     fontWeight: "bold",
+                     offset: [-10, 5],
+                   },
+                    symbol:'path://M876.922247 245.906619 144.543024 245.906619 68.51342 444.846554c0 59.552328 49.421596 108.965737 110.240777 108.965737 60.816111 0 111.500467-48.146557 111.500467-108.965737 0 59.552328 49.417503 108.965737 110.240777 108.965737 60.820204 0 111.500467-48.146557 111.500467-108.965737 0 59.552328 49.417503 108.965737 110.23873 108.965737 60.823274 0 110.236684-48.146557 110.236684-108.965737 0 59.552328 49.41648 108.965737 111.50456 108.965737 60.823274 0 111.508653-48.146557 111.508653-108.965737L876.922247 245.906619 876.922247 245.906619 876.922247 245.906619zM816.102043 588.025511 816.102043 841.447291 207.897957 841.447291 207.897957 588.025511l-63.354933 0 0 266.096451c0 22.805402 25.341155 50.677193 48.146557 50.677193l637.355009 0c22.805402 0 48.146557-27.871791 48.146557-50.677193L878.191146 588.025511 816.102043 588.025511 816.102043 588.025511 816.102043 588.025511zM876.922247 244.642836 876.922247 244.642836l2.534729 2.215458L876.922247 244.642836 876.922247 244.642836 876.922247 244.642836zM195.219193 195.229426l633.552403 0c21.541619 0 38.014802-16.47216 38.014802-38.017872 0-21.537526-16.47216-38.010709-38.014802-38.010709L195.219193 119.200846c-21.537526 0-38.010709 16.47216-38.010709 38.010709C157.209508 178.757267 173.681668 195.229426 195.219193 195.229426L195.219193 195.229426 195.219193 195.229426zM195.219193 195.229426',
+                    itemStyle:{"color":"#FEFCF6"},
+                    symbolSize:'30',
+                    children:[{
+                      name:"医院配药",
+                        children:[{
+                          name:"亲自配药",
+                          itemStyle:{"color":"#FCF7B9"},
+                          lineStyle:{"color":"#FCF7B9"},
+                          children:[{
+                            name:"1. 小区封控\n\n2. 缺乏交通工具",
+                            symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                            lineStyle:{"color":"#961E23"},
+                          }],
+                        },{
+                          name:"社区代配药",
+                          itemStyle:{"color":"#FCF7B9"},
+                          lineStyle:{"color":"#FCF7B9"},
+                          children:[{
+                            name:"1. 社区指定医院没有相关药物\n\n2. 社区人力不足",
+                            symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                            lineStyle:{"color":"#961E23"},
+                          }],
+                        },{
+                          name:"志愿者代配药",
+                          itemStyle:{"color":"#FEDF50"},
+                          lineStyle:{"color":"#FEDF50"},
+                          children:[{
+                            name:"志愿者人力不足",
+                            symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                            lineStyle:{"color":"#961E23"},
+                          }],
+                        }]
+                    },{
+                      name:"药店配药",
+                      children:[{
+                          name:"亲自配药",
+                          itemStyle:{"color":"#FCF7B9"},
+                          lineStyle:{"color":"#FCF7B9"},
+                          children:[{
+                            name:"1. 小区封控\n\n2. 缺乏交通工具",
+                            symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                            lineStyle:{"color":"#961E23"},
+                          }],
+                        },{
+                          name:"社区代配药",
+                          itemStyle:{"color":"#FCF7B9"},
+                          lineStyle:{"color":"#FCF7B9"},
+                          children:[{
+                            name:"社区人力不足",
+                            symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                            lineStyle:{"color":"#961E23"},
+                          }],
+                        },{
+                          name:"志愿者代配药",
+                          itemStyle:{"color":"#FEDF50"},
+                          lineStyle:{"color":"#FEDF50"},
+                          children:[{
+                            name:"志愿者人力不足",
+                            symbol:'path://M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m44 256v339.492c0 24.301-19.7 44-44 44s-44-19.699-44-44V256c0-24.3 19.7-44 44-44s44 19.7 44 44z m-44 428c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64z',
+                          symbolSize:'20',
+                          itemStyle:{
+                            "borderColor":"#fefaed6",
+                            "color":"#961E23",
+                            "borderWidth": '0.5',
+                          },
+                            lineStyle:{"color":"#961E23"},
+                            
+                          }],
+                        }]
+                    }]
+                  },
+                  ]
+                }
+                ],
+              left: '1.5%',
+              right: '1.5%',
+              top: '8%',
+              bottom: '20%',
+              symbol: 'emptyCircle',
+             itemStyle:{"color":"#FEFCF6"},
+              orient: 'vertical',
+              expandAndCollapse: true,
+              label: {
+                fontFamily: "Microsoft YaHei",
+                position: 'middle',
+                
+                verticalAlign: 'middle',
+                align: 'right',
+                fontSize: 13,
+                color:'#FEFCF6',
+              },
+              
+              leaves: {
+                label: {
+                  fontFamily: "Microsoft YaHei",
+                  color:'#FEFCF6',
+                  position:'bottom',
+                  verticalAlign: 'right',
+                  align: 'center',
+                  offset: [-3, 5],
+                  lineHeight: 13,
+                }
+              },
+              animationDurationUpdate: 750
+            }
+          ]
+        })
+      );
+    });
+    
+    
+        if (option && typeof option === 'object') {
+          myChart.setOption(option);
+        }
+    
+        window.addEventListener('resize', myChart.resize);
+      </script>
+      <p>“请问嘉定附近有朋友有多的阿戈美拉汀吗？……只有三天的量了，断药的话会有断药反应。”4月10日，月月数着自己所剩无几的药片，在微博上发布了求助信息。三天，这是她手中药物能支撑的最后期限。</p>
+      <p>月月是一位抑郁症患者，<span class="highlight">服药是她确诊后唯一的治疗方式</span>。封控后不久，家中的药物存量迅速告急，可是小区一直处于封闭管理状态，月月不能亲自出门买药，只好寻找其他的渠道。</p>
+      <p>居委会代配药是上海封控以来一直采用的配药模式，也是月月的第一选择。但当工作人员提着大袋药物回到小区时，她却被告知社区指定的配药点无法提供精神类药物。</p>
+      <p>3月底，京东平台称，合作的上海地区相关药店都处于正常营业状态。月月立刻在平台上进行了断药登记，期望能在不久后收到药物。但此后，平台显示的只有日复一日的“找药中”。断药的日子一步步逼近，求药过程却仍毫无进展。</p>
+      <p>平台找不到药，专科医院也许可以配到？抱着这样的想法，月月连续打了几通电话。可上海精神卫生中心总院的医生在为她登记了需求之后便再无回音；嘉定分院回复可以配药，但没有私家车的月月却无法前往。怀着最后的希望，她联系了离家较近的普陀分院，然而电话那头的声音告诉她，该医院目前只能给本区的居民配药，对身处嘉定区的月月爱莫能助。</p>
+      <p>能想到的方法都失败了，这让本就患有抑郁症的月月经受了更大的心理折磨。<span class="highlight">反复寻找，反复落空</span>，她仿佛在没有尽头的隧道里摸索，沿途明灭的光影不断，却都不是出口。</p>
+      <p>由于存在药物依赖，抑郁症患者不能突然断药。断药后会怎样？她时常会在网上看到病友的自述，“会在半夜突然惊醒，浑身出冷汗”“反正就是那种行尸走肉的感觉”“记不清任何事情，力气仿佛被抽干了一样，睡一会儿，不醒来就好了 ”……</p>
+      <p>绝望之中，最后的救命稻草是不久前发出的求助帖。在断药的前一天，一位病友联系了月月，表示可以匀一些药给她。</p>
+      <p>在病友的帮助下，月月暂时度过了断药危机。</p>
+      <p>求助信息的统计结果显示，求药的人群中，<span class="highlight">抑郁症、焦虑症等精神类疾病的求药人数占比高达16%，是求药人数最多的群体</span>。而此类疾病的药物在综合类医院中往往储量不足，甚至根本不提供，很多病人只能另寻配药途径。</p>
+      <p>据统计，求助链接中96%的慢性病类所需药物为处方药，此类药的处方量一般在4周内，这意味着<span class="highlight">长时间的封控会影响到大部分慢性病患者的药物存量</span>。</p>
+      <div class="flourish-embed flourish-hierarchy" data-src="visualisation/10218019" style="width: 700px;text-align: center;margin:0 auto" >
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+      </div>
+      <p>为了防止断药危机的再次出现，月月一直在寻找更多的配药途径。4月20日，她联系上了本区的线上药店，在与老板沟通后，终于配到了足够的药物。</p>
+      <p>当天，在上海16区获得《药品经营许可证》的4481家药店中，为医疗保供而开门营业的药店仅877家，其中松江区、青浦区的营业药店数为0。月月所处的嘉定区虽然有48家药店保持营业，但也只有一两家能够提供她所需的药物。</p>
+
+      <div style="position:relative;width:700px;margin-left:auto;margin-right:auto;margin-top:50px;">
+        <div class="pict">
+          <img src="img/yaodian1.png" id="yaodian" class="graph">
+        </div>
+        <div id="yaodian2" class="pict">
+          <img src="img/yaodian2.png" id="yaodian" class="graph">
+        </div>
+      </div>
+      <p>月月说，联系上药店还只是买药的第一步。当居民无法离开小区时，药物就只能由闪送、跑腿代为购买，再由居委会送上门。而在严峻的疫情形势之下，以上每一环都可能出现问题。</p>
+      <p>普通医院精神类药物储备不够，但需求量最大；营业药店数量骤减，无法解决患者需求；配送费用高昂，配送人力不足……封控迫使精神类疾病患者面临更多的困难，在城市的各处角落，还有不计其数的人像月月一样在煎熬。</p>
+      <p>“我希望能告诉我们如何合理分配医疗资源。”网友“神奇的柒小7”的微博更新出最后一行字：“这个世上不是只有疫情一种病。”</p>
+
+      <div class="title" id="title3" style="margin-top: 180px;padding-bottom: 0;margin-bottom: 0;font-size: 0;line-height: 0" >
+        <img src="img/title3.png" class="titleimg" style="margin-top: 0;padding-bottom: 0;margin-bottom: 0;display: block">
+      </div> 
+    </div>
+  </div>
+  <div class="slide slide-two" data-background="#fefaed" color="#000" style="background-color: #fefaed;margin-top: 0;">
+    <div id="pt4" style="padding-top: 0;">
+
+      <p style="margin-top:120px">慢性病患者并非孤立无援，来自各方的救援也在逐步开展，帮助他们摆脱困境。</p>
+      <p><span class="highlight">志愿者是最先伸出援手的群体之一。</span></p>
+      <p>阿蒙所在的小区被封控许久，同楼的老人们大多有配药的需求。由于居委会人力有限，阿蒙与同楼的几个年轻人决定，每周外出帮助大家配一次药。</p>
+      <p>每次配药前一晚，志愿者们会提前收集好居民们的配药信息和医保卡。集中代配药需要先给所有人挂号，请医生开好所有处方后，返回收费窗口一一缴费，最后去药房取药。为了尽量满足居民的需求，他们要依照以上流程前往多家医院配药。</p>
+
+      <div class="graph" id="volunteer" style="position: relative;">
+        <img id="volunteerimg" src="img/volunteer0.png" class="img" style="width: 700px;transition:all 2s ease-out;">
+          <button class="buttona" id="buttona0" onClick="imgvfunc0()"></button>
+          <button class="buttona" id="buttona1" onClick="imgvfunc1()"></button>
+          <button class="buttona" id="buttona2" onClick="imgvfunc2()"></button>
+          <button class="buttona" id="buttona3" onClick="imgvfunc3()"></button>
+          <button class="buttona" id="buttona4" onClick="imgvfunc4()"></button>
+      </div>
+    <script>
+    function imgvfunc0(){
+        $('#volunteerimg').attr('src','img/volunteer0.png');
+    }
+    function imgvfunc1(){
+        $('#volunteerimg').attr('src','img/volunteer1.png');
+    }
+    function imgvfunc2(){
+        $('#volunteerimg').attr('src','img/volunteer2.png');
+    }
+    function imgvfunc3(){
+        $('#volunteerimg').attr('src','img/volunteer3.png');
+    }
+    function imgvfunc4(){
+        $('#volunteerimg').attr('src','img/volunteer4.png');
+    }
+    </script>
+      <p>实际配药过程中会遇到一些问题。第一次配药时没有经验，志愿者们将所有药都混放在同一个袋子中，导致后续药物分发工作变得十分繁琐。后来，他们总结出了自己的办法：“我们会让每家都准备好一个袋子，写好自己的居室号和姓名，这样我们拿到药之后，就可以把药、医保卡、病例本和发票收据都一起放在袋子里。”志愿者们将医保卡按楼层排序，后续的付款、取药等流程都依照顺序进行，使得配药工作能够有序开展。</p>
+      <p><span class="highlight">除了线下自发组建的志愿团队，线上的志愿帮扶也在展开。</span></p>
+      <p>3月30日深夜，"上海医疗紧急求助"共享文档在网络上流传开来。文档的发起者华融琦与三个朋友一起按16个区划分了表单，从困难类型、症状情况、封控状态等方面对求助信息进行分类。这是志愿组织"守沪者"一起工作的第一个夜晚。</p>
+      <p>“一个人获得的信息有限，我们这样的组织把信息收集起来，让求助者对整体情况有一个更好的了解。”华融琦介绍，在对收集到的信息进行处理和核实后，“守沪者”会为对方提供一些解决途径。</p>
+      <div class="flourish-embed flourish-cards" data-src="visualisation/10349014" style="width:700px;text-align:center;margin:0 auto;"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+      <p>由最开始的四人群体发展到五百多人的组织，“守沪者”凭借各组之间的协调配合，解决了一部分求助者的问题。"我们确认解决的大概在45%，那些我们能意识到的跟生命有关的、情况非常危险的求助，这边都解决了。"</p>
+      <p><span class="highlight">与此同时，医院也在尽力治疗病患。</span></p>
+      <p>闵行区某三级医院急诊吕医生透露，目前他所在的医院里的医生正在逐步回院，病房也在慢慢开张，对病人的接收没有特殊要求。</p>
+      <p>5月1日，我们进行了第三次电话调查，发现57家三级医疗机构中有31家明确表示能够收治病患。相比于第一次的调查结果，情况明显好转。</p>
+
+      <div class="graph" style="position:relative">
+        <img id="geo33" src="img/geoall.gif" style="width: 700px;transition:all 2s ease-out;">
+          <button class="button" id="button1" onClick="imgfunc1()" style="left:112px"></button>
+          <button class="button" id="button2" onClick="imgfunc2()" style="left:242px"></button>
+          <button class="button" id="button3" onClick="imgfunc3()" style="left:365px"></button>
+          <button class="button" id="button4" onClick="imgfunc4()" style="left:494px"></button>
+      </div>
+      <p>同时，官方电话的接听情况也有了改善。第一次电话调查中，等待医院接通电话的时间平均需要125.5秒，而第三次调查时，这一等待时间下降至21.6秒。</p>
+      <div class="pict"><img src="img/time.png" id="time" class="graph"></div>
+      <p>浦东新区的安达医院开放了线上留言平台，让不能出门的病患通过线上诊疗解决问题。</p>
+      <p>王医生日常工作中的一项就是线上诊疗，据她描述，回复病患时如遇到病情描述特别严重的留言，医生会回访患者询问具体情况。而面对出现负面情绪的患者，医生们还需要做好疏导工作。</p>
+      <p><span class="highlight">政府职能部门的救援也在推进。</span>数据显示，4月20日至30日，上海16区的零售药房营业率在十天内增长近四成，超过一半的药房恢复正常营业，帮助市民逐渐摆脱买药难的困境。</p>
+      <p>此外，5月22日起，上海的部分轨交线路和公交线路也已恢复运营，帮助市民的出行生活尽快重回正轨。例如，本批恢复运营线路中的49路公交车，连接了中山医院、肿瘤医院等15家大小医疗机构，它的畅通将使得市民的求医问药之路更加便捷。</p>
+      <div class="pict"><img src="img/poster.png" id="time" class="graph"></div>
+      <p>情况在一步步好转，但有些慢性病患者可能无法在短时间内摆脱新冠带来的次生灾害。我国的慢性病患者群体数量庞大，疫情的发生不可避免地会影响到这一群体。</p>
+      <p>中国疾控中心的周脉耕团队分析了2020年第一季武汉及中国其他地区的慢性病额外死亡率。以糖尿病为例，数据显示，在该时间段内，<a id="extra-death-start">武汉市内慢性非传染性疾病死亡率<span class="highlight">增加21%</span></a>，其中糖尿病死亡率<span class="highlight">增加83%</span>。考虑到糖尿病发病率和死亡率是逐年上升的，团队推测，本轮上海疫情的糖尿病死亡率不低于武汉当年的数据。</p>
+      <div class="extra-death">
+        <div class="extra-death-imgs" id="extra-death-imgs" style="width: 700px;">
+            <img src="img/extra-death1.png" class="img" id="extra-death1">
+            <img src="img/extra-death2.png" class="img" id="extra-death2">
+        </div>
+        <div class="extra-death-text" id="extra-death-text">
+            <div class="extra-death-p" id="extra-death-p1" style="background-color: #28334e00;"></div>
+            <div class="extra-death-p" id="extra-death-p2" style="background-color: #28334e00;margin-bottom: 0;"></div>
+        </div>
+      </div>
+	  <p>几乎整个世界都处于新冠疫情阴霾的笼罩之下。世界卫生组织在2022年5月5日发布的报告显示，新冠疫情造成的实际死亡人数，可能是目前各国公布总人数的3倍，实际总死亡数或将高达1500万人。</p>
+      <p>《柳叶刀》杂志主编Richard Horton博士认为：“新冠疫情是急性传染病与慢性病以及风险因素联合造成的公共健康危机，<span class="highlight">慢性病是驱动新冠死亡人数增加的重要因素</span>。”</p>
+      <p>因此，新冠防控之时，慢性病患者也应得到更多重视。阻止病毒传播固然重要，但这一过程给慢性病患者造成的二次伤害同样值得关注。帮助他们走出断医断药的困境，才能够更高效地抵御新冠病毒。</p>
+      <p>当求医问药无路可走，多方支援成为了慢性病患者的“救命稻草”。“病”临城下时，慢性病患者们不仅要抵御来自新冠病毒的“外忧”，还要解决慢性病这一“内患”带来的困扰。平衡急性流行病和其他病种之间的关系，任重而道远。</p>
+    </div>
+    <div id="pt5" style="margin-bottom:0;font-style:italic;margin-top:130px;font-size:15px;width:600px;text-align:center;margin-left:auto;margin-right:auto;color:#808080">
+      <p>5月31日，是上海全面复工复产前的最后一天。看着窗外的风景，月月拿起手机对着朝夕相处的楼群和大树，按下了拍摄键：“庆祝一下，80天封闭的最后一晚。”</p>
+      <p>第二天一早，月月推开家门，小区里的狸花猫一如往日地在她脚边转来转去。远处的云层透着一层阳光的清凉，风清清爽爽地吹来，在身上肆意洒了一遍，积累了80天的阴霾尽数被阵阵微风带走。她闭上眼，感受着久违的夏天。</p>
+      <p>那一瞬间，她似乎听到齿轮归位的咔哒声。</p>
+
+    </div>
+    <div id="ending" style="margin-bottom:0;position:relative">
+	<div id="ending-img" style="position:absolute;left:0px;width:350px;margin-top:190px">
+		<img src="img/sunshine.gif" style="width:350px">
+	</div>
+	<div id="ending-text" style="position:absolute;right:-40px">
+		<div class="enddiv">
+			<p class="bolld">指导老师</p>
+			<p class="order">（按姓名首字母排序）</p>
+			<p class="name">戴玉老师&nbsp&nbsp&nbsp&nbsp刘萍老师</p>
+		</div>
+		<div class="enddiv" style="margin-bottom:120px;">
+			<p class="bolld">制&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp作</p>
+			<p class="order">（按姓名首字母排序）</p>
+			<p class="name" style="line-height:28px">数据编码与分析：韩怡楠 卢红宇</br>徐澜月 徐依灵 郑欣文</p>
+			<p class="name">文案：韩怡楠 徐澜月</p>
+			<p class="name">设计：卢红宇 徐依灵</p>
+			<p class="name">前端：郑欣文</p>
+			<p id="footer">©中国传媒大学 · 新闻学院，2022</p>
+		</div>
+	</div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+<!-- partial --> 
+<script src="dist/jquery-3.6.0.min.js"></script>
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src='dist/jquery.scrollie.min_1.js'></script> 
+<script src="dist/script.js"></script>
+<script src="dist/scroll.charts.js"></script>
+<script src="js/fixedScroll.js"></script>
+<script src="dist/ScrollMagic.js"></script>
+<script src="dist/debug.addIndicators.js"></script>
+<script>
+  function imgfunc1(){
+      $('#geo33').attr('src','img/geo1.png');
+  }
+  function imgfunc2(){
+      $('#geo33').attr('src','img/geo2.png');
+  }
+  function imgfunc3(){
+      $('#geo33').attr('src','img/geo3.png');
+  }
+  function imgfunc4(){
+      $('#geo33').attr('src','img/geoall.gif');
+  }
+</script>
+<!--<script>
+  $(".geoq").fixedScroll({
+      stickEndEl: $("#disease-type-p6")
+  })-->
+  
+</script>
+</body>
+</html>
